@@ -12,7 +12,7 @@ setFormData({ ...formData, [name]: value });
 }
 function handleSubmit(event) {
 // Prevent a browser reload, then send the form values to the parent component.
-//event.preventDefault();
+event.preventDefault();
 onSave(formData);
 }
 return (
